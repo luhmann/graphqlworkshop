@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "nodemon": "^1.11.0",
     "react-scripts": "0.6.1"
   },
   "dependencies": {
@@ -23,11 +24,13 @@
     "react-addons-update": "^15.3.2",
     "react-apollo": "^0.5.13",
     "react-dom": "^15.3.2",
-    "sequelize": "^3.24.5"
+    "sequelize": "^3.24.5",
+    "sqlite3": "^3.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "server": "nodemon ./src/server/index.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

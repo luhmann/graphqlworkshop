@@ -1,10 +1,10 @@
 const Sequalize = require('sequelize');
 
-const db = new Sequalize('postgres://oakbmqixdijogm:WaIgtJyBSg9KBHa7sasNzNwBc1@ec2-54-228-192-254.eu-west-1.compute.amazonaws.com:5432/db7uuofu104gv6', {
-    dialectOptions: {
-        ssl: true,
-    },
-    dialect: 'postgres',
+const db = new Sequalize('sqlite://local.sqlite', {
+    // dialectOptions: {
+    //     ssl: true,
+    // },
+    dialect: 'sqlite',
     pool: {
         max: 1,
         min: 0,
